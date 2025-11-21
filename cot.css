@@ -225,7 +225,7 @@ input, select, textarea {
 }
 
 .logo-preview-large {
-    max-width: 180px;
+    max-width: 200px;
     max-height: 180px;
     text-align: center;
 }
@@ -710,4 +710,5 @@ select#advisor-name {
     font-style: italic;
     text-align: center;
     padding: 10px;
+
 }
