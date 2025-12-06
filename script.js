@@ -1,6 +1,6 @@
 // Credenciales predefinidas
 const VALID_USERS = [
-    { username: "Anfercorp", password: "2025Anfercorp" },
+    { username: "minfercorp", password: "minfercorp2025" },
 ];
 
 // Referencias a elementos del DOM
