@@ -1247,7 +1247,7 @@ function setupProductSearch() {
                 // Construir descripción con marca y código
                 let displayText = product.name;
                 if (product.brand && product.brand.trim() !== '') {
-                    displayText += ` (${product.brand})`;
+                    displayText += ` - ${product.brand}`;
                 }
                 if (product.code && product.code.trim() !== '') {
                     displayText += ` - ${product.code}`;
@@ -1324,7 +1324,7 @@ function addProductFromSearch(productId) {
         // Construir la descripción formateada con marca y código
         let description = product.name;
         if (product.brand && product.brand.trim() !== '') {
-            description += ` (${product.brand})`;
+            description += ` - ${product.brand}`;
         }
         if (product.code && product.code.trim() !== '') {
             description += ` - ${product.code}`;
@@ -1603,7 +1603,7 @@ function showPreview() {
             return;
         }
         
-        const defaultLogo = '<img src="accents/MINFERCORP.jpeg" alt="Logo">';
+        const defaultLogo = '<img src="accents/MINFERCORP.png" alt="Logo">';
 
         // Recopilar datos del formulario de forma segura
         quoteData = {
@@ -1681,7 +1681,7 @@ function showPreview() {
                 finalDesc = originalNameInput.value;
                 
                 if (brandInput && brandInput.value && brandInput.value.trim() !== '') {
-                    finalDesc += ` (${brandInput.value.trim()})`;
+                    finalDesc += ` - ${brandInput.value.trim()}`;
                 }
                 
                 if (codeInput && codeInput.value && codeInput.value.trim() !== '') {
@@ -2020,6 +2020,7 @@ function confirmAndDownload() {
         }, 800);
     }
 }
+
 
 
 
