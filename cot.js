@@ -4,23 +4,18 @@ let bankCounter = 0;
 
 // Base de datos de asesores
 const ADVISORS_DB = [
-    { id: 1, name: "Huamanchumo Paula", active: true },
+    { id: 1, name: "Alayo Rocio", active: true },
     { id: 2, name: "Alayo Yoiner", active: true }
 ];
 
 // Base de datos de bancos
 const DEFAULT_BANKS = [
     {
-        name: "BCP",
-        accountPen: "5707200550002",
-        cciPen: "00257000720055000209"
-    },
-    {
         name: "INTERBANK",
-        accountPen: "600-3007138013",
-        cciPen: "003-600-003007138013-40",
-        accountUsd: "600-3007138020",
-        cciUsd: "003-600-003007138020-45"
+        accountPen: "600-3007747338",
+        cciPen: "003-600-003007747338-44",
+        accountUsd: "600-3007747345",
+        cciUsd: "003-600-003007747345-49"
     }
 ];
 
@@ -1608,16 +1603,16 @@ function showPreview() {
             return;
         }
         
-        const defaultLogo = '<img src="accents/ANFERCORP.jpeg" alt="Logo">';
+        const defaultLogo = '<img src="accents/MINFERCORP.jpeg" alt="Logo">';
 
         // Recopilar datos del formulario de forma segura
         quoteData = {
             logo: defaultLogo,
-            companyName: 'ANFERCORP S.A.C.',
-            companyRuc: '20605975225',
-            companyAddress: 'Av. America Sur 1178 - Trujillo - Trujillo',
-            companyPhone: '966927253',
-            companyEmail: 'anfercorp.pe@gmail.com',
+            companyName: 'MINFERCORP S.A.C.',
+            companyRuc: '-',
+            companyAddress: '-',
+            companyPhone: '947706107',
+            companyEmail: 'minfercorp.ferreteria@hotmail.com',
             quoteNumber: document.getElementById('quote-number').value || '0001 - 01',
             quoteDate: document.getElementById('quote-date').value,
             validUntil: document.getElementById('valid-until').value,
@@ -2025,5 +2020,6 @@ function confirmAndDownload() {
         }, 800);
     }
 }
+
 
 
